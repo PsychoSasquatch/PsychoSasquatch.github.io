@@ -1,178 +1,85 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>My First Web Page!</title>
-    <style>
-        body {
-            background-color: rgb(0, 0, 0);
-            margin: 0px;
-        }
-
-        .tab div {
-            display: none;
-        }
-
-        .tab div:target {
-            display: block;
-        }
-
-        ul {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: inline-block;
-            text-align: center;
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: wrap;
-            background-color: rgb(100, 0, 100);
-            font-family: monospace;
-        }
-
-        li {
-            display: inline-block;
-            text-align: center;
-            border-right: 1px solid rgb(224, 108, 0);
-            border-left: 1px solid rgb(224, 108, 0);
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 16px 75px;
-            text-decoration: none;
-        }
-
-        li a:hover {
-            background-color: rgb(224, 108, 0);
-            color: black;
-        }
-
-        h1 {
-            color: rgba(224, 108, 0, 0.75);
-            font-family: fantasy;
-            padding-top: 25px;
-            text-align: center;
-        }
-
-        h2 {
-            color: rgb(100, 0, 100);
-            font-family: 'Times New Roman', Times, serif;
-        }
-
-        h3 {
-            color: rgb(100, 0, 100);
-            font-family: cursive;
-        }
-
-        h4 {
-            color: rgb(100, 0, 100);
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        p {
-            color: rgb(100, 0, 100);
-            font-family: sans-serif;
-        }
-
-        .centerImage {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-        .centerText {
-            text-align: center;
-        }
-
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.575);
-            padding: 12px 16px;
-            z-index: 1;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-    </style>
+<title>Psycho's Shit Show!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    background-color: #1D1B1B;
+    color: #EC4D37;
+}
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover{
+    color:#F1F1F1;
+}
+.sidenav .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+}
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
-
 <body>
 
-    <div class="tab">
-        <!--Heading/Navigation-->
-        <ul>
-            <li class="dropdown">
-                <span><a href="#home">Home</a></span>
-                <div class="dropdown-content">
-                    <p>Hey what up, I'm a sneaky fuck</p>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <span><a href="#pictures">Pictures</a></span>
-                <div class="dropdown-content">
-                    <img src="PsychoFace.png">
-                </div>
-            </li>
-
-            <li>
-                <span><a href="#tables">Tables</a></span>
-            </li>
-
-            <li>
-                <span><a href="#animations">Animations</a></span>
-            </li>
-
-        </ul>
-        <!--Actual Content-->
-        <div id="home">
-            <h1>Psycho's Shitty Website &#x3C;3 </h1>
-            <h2>This will have links</h2>
-        </div>
-
-        <div id="pictures">
-            <h1>I wanted to do a little troll</h1>
-            <h2>where when you click on "Pictures"</h2>
-            <h3>it would just be whole page with my face</h3>
-            <h4>but i would have to repeat the same img over and over to that just for this page</h4>
-            <img src="PsychoFace.png" class="centerImage">
-        </div>
-
-        <div id="tables">
-            <h1>
-                There will be lists and tables
-            </h1>
-        </div>
-
-        <div id="animations">
-            <h1>
-                There will be items with rounded corners and animations
-            </h1>
-        </div>
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">ETC</a>
     </div>
 
-</body>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
 
+    <script>
+        function openNav(){
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav(){
+            document.getElementById("mySidenav").style.width = "0px";
+            document.getElementById("main").style.width = "0px";
+        }
+    </script>
+
+    <h1>Hello World</h1>
+
+
+</body>
 </html>
 
 
 <!-- 
-2. add some icons
 
 4. add some lists and tables
 5. make some things that need combinators, pseudo-classes, and pseudo-elements
