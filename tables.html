@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <script src="scripts for shitty site.js"></script>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="home.html">Home</a>
@@ -18,34 +19,70 @@
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
     </div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0px";
-            document.getElementById("main").style.width = "0px";
-        }
-    </script>
-    
     <h1>This page is dedicated to pre-made tables, animations, and rounded corners</h1>
+    <br />
+    <!-- <h2><a href="#" onclick="show(1);">Post Malone</a></h2>
+    <br />
+    <h2><a href="#" onclick="show(2);">Mac Miller</a></h2>
 
-    <table>
-        <tr>
-            <td>
-                <a href="#" onclick="show(1);">Table 1</a>
-                <br />
-                <a href="#" onclick="show(2);">Table 2</a>
-            </td>
-            <td>
-                &nbsp;
-            </td>
+    <div id="table1" ; display:table;>
+        <table>
+            <caption>Post Malone</caption>
+            <tr>
+                <th>Album</th>
+            </tr>
+            <tr>
+                <td>Bentleys and Beer Bongs</td>
+            </tr>
             <td>
                 <div id="table1">Content of 1</div>
                 <div id="table2">Content of 2</div>
             </td>
+        </table>
+    </div> -->
+
+    <table align="center">
+        <caption>Post Malone</caption>
+        <tr>
+            <th>Album Name</th>
+            <th>Year Rleased</th>
+            <th>My Rating of Album</th>
+        </tr>
+        <tr>
+            <td>beerbongs & bentleys</td>
+            <td>2018</td>
+            <td>78%</td>
+        </tr>
+        <tr>
+            <td>Stoney (Deluxe)</td>
+            <td>2016</td>
+            <td>78%</td>
+        </tr>
+    </table>
+
+    <br />
+
+    <table align="center">
+        <caption>Mac Miller</caption>
+        <tr>
+            <th>Album Name</th>
+            <th>Year Rleased</th>
+            <th>My Rating of Album</th>
+        </tr>
+        <tr>
+            <td>Swimming</td>
+            <td>2018</td>
+            <td>92%</td>
+        </tr>
+        <tr>
+            <td>The Divine Feminine</td>
+            <td>2016</td>
+            <td>90%</td>
+        </tr>
+        <tr>
+            <td>GO:OD AM</td>
+            <td>2015</td>
+            <td>88%</td>
         </tr>
     </table>
 

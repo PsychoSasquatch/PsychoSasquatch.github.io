@@ -77,19 +77,24 @@ a:active {
 }
 
 table, th, td {
-    border: 1px solid #EC4D37;
+    border: 3px solid #EC4D37;
     border-collapse: collapse;
+    background-color: #FAB301;
 }
 
-th {
+th, td {
     padding: 5px;
     text-align: left;
 }
 
-td {
-    vertical-align: top;
+tr {
+    color: #1D1B1B;
 }
 
-#table1, #table2, {
-    display: none;
+caption {
+    font-size: 150%;
 }
+
+/* #table1, #table2 {
+    display: none;
+} */
