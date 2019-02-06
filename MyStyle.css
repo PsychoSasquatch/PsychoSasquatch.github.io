@@ -80,6 +80,8 @@ table, th, td {
     border: 3px solid #EC4D37;
     border-collapse: collapse;
     background-color: #FAB301;
+    height: 30px;
+    width: 675px;
 }
 
 th, td {
