@@ -55,3 +55,41 @@ body {
 h1, h2, h3, h4, h5, h6, p {
     text-align: center;
 }
+
+a:link {
+    color: #FAB301;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FAB301;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:active {
+    color: #FAB301;
+    text-decoration: none;
+}
+
+table, th, td {
+    border: 1px solid #EC4D37;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 5px;
+    text-align: left;
+}
+
+td {
+    vertical-align: top;
+}
+
+#table1, #table2, {
+    display: none;
+}
