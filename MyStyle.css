@@ -95,6 +95,26 @@ caption {
     font-size: 150%;
 }
 
-/* #table1, #table2 {
-    display: none;
-} */
+#rcorners {
+    border-radius: 15px 50px;
+    background: #FAB301;
+    padding: 20px;
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    margin: -200px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+}
+
+#titleIncoming {
+    position: relative;
+    animation-name: incoming;
+    animation-duration: 1.5s;
+    animation-direction: normal;
+}
+
+@keyframes incoming {
+    from {color: #1D1B1B;}
+    to {color: #EC4D37;}
+}
